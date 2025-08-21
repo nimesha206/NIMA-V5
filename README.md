@@ -26,6 +26,9 @@ _Click the button below to fork  NIMA-V5 repository to your GitHub account_
   </a>
 </div>
 
+  ---
+
+
 > 2:  **Get Pair Code**
 
 _Deploy the bot and easily connect it to your WhatsApp account by pair code. Bellow🥈_
@@ -42,6 +45,9 @@ _Deploy the bot and easily connect it to your WhatsApp account by pair code. Bel
   </a>
 </div>
 
+  ---
+
+
 > 3: **DOWNLOAD BOT ZIP**
 
 _Download Bot Zip file From the button Bellow_
@@ -52,10 +58,67 @@ _Download Bot Zip file From the button Bellow_
 </p>
 
 
+ ---
+
+
 > 4:  **Deploy Now**
 
-_For further setup & guidance, click the button below🩹_
+
+
+
 [![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Watch+The+Deployment+Tutorials;Bellow+For+FreePanel+Deployments)](https://git.io/typing-svg)
+
+
+
+
+
+### <h2 align="">NIMA-V5 DEPLOYMENT OPTIONS𐃁</h2>
+
+<summary>❤️ DEPLOY IN FREE AND PAY ❤️</summary>
+<hr>
+<h5>💆‍♂‍ Deploy Free Workflows 👇</h5>
+
+```
+name: Node.js CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20.x]
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Start application
+      run: npm start
+```	
+</details>
+<hr>
+
+
+---
+
 
 > **Deploy Now on Below Panel**
 <div align="left">
