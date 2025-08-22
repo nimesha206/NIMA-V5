@@ -51,7 +51,7 @@ const { dareCommand } = require('./commands/dare');
 const { truthCommand } = require('./commands/truth');
 const { clearCommand } = require('./commands/clear');
 const pingCommand = require('./commands/ping');
-//const aliveCommand = require('./commands/alive');
+const aliveCommand = require('./commands/alive');
 const blurCommand = require('./commands/img-blur');
 const welcomeCommand = require('./commands/welcome');
 const goodbyeCommand = require('./commands/goodbye');
@@ -60,7 +60,7 @@ const { handleAntiBadwordCommand, handleBadwordDetection } = require('./lib/anti
 const antibadwordCommand = require('./commands/antibadword');
 const { handleChatbotCommand, handleChatbotResponse } = require('./commands/chatbot');
 const takeCommand = require('./commands/take');
-//const { flirtCommand } = require('./commands/flirt');
+const { flirtCommand } = require('./commands/flirt');
 const characterCommand = require('./commands/character');
 const wastedCommand = require('./commands/wasted');
 const shipCommand = require('./commands/ship');
@@ -89,7 +89,7 @@ const aiCommand = require('./commands/ai');
 const { handleTranslateCommand } = require('./commands/translate');
 const { handleSsCommand } = require('./commands/ss');
 const { addCommandReaction, handleAreactCommand } = require('./lib/reactions');
-//const { goodnightCommand } = require('./commands/goodnight');
+const { goodnightCommand } = require('./commands/goodnight');
 const { shayariCommand } = require('./commands/shayari');
 const { rosedayCommand } = require('./commands/roseday');
 const imagineCommand = require('./commands/imagine');
@@ -108,7 +108,7 @@ const channelInfo = {
         forwardingScore: 1,
         isForwarded: false,
         forwardedNewsletterMessageInfo: {
-            newsletterJid: '@newster',
+            newsletterJid: '@newsletter',
             newsletterName: 'NIMA-V5',
             serverMessageId: -1
         }
@@ -248,7 +248,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
             // Check if message is from owner (fromMe) or bot itself
             if (!message.key.fromMe) {
                 await sock.sendMessage(chatId, {
-                    text: '❌ සමාවන්න. එය නිමේෂට පමණක් භාවිත කල හැකි විධානයකි!',
+                    text: '❌ සමාවන්න. එය admin වරුන්ට පමණක් භාවිත කල හැකි විධානයකි!',
                     ...channelInfo
                 });
                 return;
@@ -449,7 +449,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
                 if (guessedLetter) {
                     guessLetter(sock, chatId, guessedLetter);
                 } else {
-                    sock.sendMessage(chatId, { text: 'කරුණාකර guess යනුවෙන් ඇතුලත් කරන්න. උදාහරණ .guess <letter>', ...channelInfo });
+                    sock.sendMessage(chatId, { text: 'කරුණාකර guess යනුවෙන් ඇතුලත් කරන්න. උදාහරණ guess <letter>', ...channelInfo });
                 }
                 break;
             case userMessage.startsWith('trivia'):
@@ -460,7 +460,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
                 if (answer) {
                     answerTrivia(sock, chatId, answer);
                 } else {
-                    sock.sendMessage(chatId, { text: 'කරුණාකර answer යනුවෙන් ඇතුලත් කරන්න. උදාහරණ .answer <answer>', ...channelInfo });
+                    sock.sendMessage(chatId, { text: 'කරුණාකර answer යනුවෙන් ඇතුලත් කරන්න. උදාහරණ answer <answer>', ...channelInfo });
                 }
                 break;
             case userMessage.startsWith('compliment'):
@@ -896,7 +896,7 @@ async function handleGroupParticipantUpdate(sock, update) {
             const data = JSON.parse(fs.readFileSync('./data/userGroupData.json'));
             const goodbyeData = data.goodbye[id];
             const goodbyeMessage = goodbyeData?.message || 'සුභගමන් {user} 👋';
-            const channelId = goodbyeData?.channelId || '@neter';
+            const channelId = goodbyeData?.channelId || '@newsletter';
 
             // Send goodbye message for each leaving participant
             for (const participant of participants) {
