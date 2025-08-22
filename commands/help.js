@@ -66,7 +66,7 @@ async function helpCommand(sock, chatId, message) {
 ┗❐
 
 ┏❐ \`මූලික විධාන\` ❐
-┃➤ උදව් (සියලුම විධාන පෙන්වයි)
+┃➤ help/උදව් (සියලුම විධාන පෙන්වයි)
 ┃➤ ping (server වල වේගය පෙන්වයි)
 ┃➤ runtime (සම්බන්ධ ඌ වේලාව)
 ┃➤ tts (විනෝදජනක වොයිස්)
@@ -198,7 +198,7 @@ async function helpCommand(sock, chatId, message) {
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '@newsletter',
-                        newsletterName: '',
+                        newsletterName: 'nimesha',
                         serverMessageId: -1
                     }
                 }
