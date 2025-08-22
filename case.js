@@ -238,13 +238,13 @@ break;
 
                     autoTyping = true
 
-                    reply(`හරී auto-typing  ${q} on උනා`)
+                    reply(`හරී auto-typing  ${q}  උනා`)
 
                 } else if (q === 'off') {
 
                     autoTyping = false
 
-                    reply(`හරී auto-typing ${q} off උනා`)
+                    reply(`හරී auto-typing ${q}  උනා`)
 
                 }
 
@@ -257,13 +257,13 @@ break;
                 if (q === 'on') {
                     autoRecording = true
 
-                    reply(`හරී auto-recording ${q} on උනා`)
+                    reply(`හරී auto-recording ${q} උනා`)
 
                 } else if (q === 'off') {
 
                     autoRecording = false
 
-                    reply(`හරී auto-recording ${q} off උනා `)
+                    reply(`හරී auto-recording ${q}  උනා `)
 
                 }
 
@@ -275,10 +275,10 @@ break;
   if (args.length < 1) return reply(`උදාහරණ ${prefix + command} on/off`)
   if (q === 'on') {
     autoread = true
-    reply(`හරී auto-read ${q} on උනා`)
+    reply(`හරී auto-read ${q} උනා`)
   } else if (q === 'off') {
     autoread = false
-    reply(`හරී auto-read ${q} off උනා`)
+    reply(`හරී auto-read ${q} උනා`)
   }
   break;
 ///////////////////GITCLONE//////////////  
@@ -315,10 +315,10 @@ let regex1 = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
   if (args.length < 1) return reply(`උදාහරණ ${prefix + command} on/off`)
   if (q === 'on') {
     autobio = true
-    reply(`හරී Auto-bio  ${q} on උනා`)
+    reply(`හරී Auto-bio  ${q} උනා`)
   } else if (q === 'off') {
     autobio = false
-    reply(`හරී Auto-bio  ${q} off උනා`)
+    reply(`හරී Auto-bio  ${q} උනා`)
   }
   break   
         
