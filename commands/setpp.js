@@ -17,7 +17,7 @@ async function setProfilePicture(sock, chatId, msg) {
         const quotedMessage = msg.message?.extendedTextMessage?.contextInfo?.quotedMessage;
         if (!quotedMessage) {
             await sock.sendMessage(chatId, { 
-                text: '_අවශ්‍ය පිංතූරයට .setpp යනුවෙන් එවන්න!_' 
+                text: '_අවශ්‍ය පිංතූරයට setpp යනුවෙන් එවන්න!_' 
             });
             return;
         }
