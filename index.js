@@ -287,7 +287,7 @@ async function startconn() {
             await delay(1999)
             console.log(chalk.yellow(`\n\n    ${chalk.bold.blue(`[ ${global.botname || 'NIMA-V5'} ]`)}\n\n`))
             console.log(chalk.cyan(`< ================================================== >`))
-            console.log(chalk.magenta(`\n${global.themeemoji || '•'} YT CHANNEL: SUPRMELORD`))
+            console.log(chalk.magenta(`\n${global.themeemoji || '•'} YT CHANNEL: NIMESHA`))
             console.log(chalk.magenta(`${global.themeemoji || '•'} GITHUB: nimanew303`))
             console.log(chalk.magenta(`${global.themeemoji || '•'} WA NUMBER: ${owner}`))
             console.log(chalk.magenta(`${global.themeemoji || '•'} CREDIT: NIMESHA`))
