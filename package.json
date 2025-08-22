@@ -1,6 +1,6 @@
 {
   "name": "NIMA-V5",
-  "version": "1.2.1",
+  "version": "5",
   "description": "WhatsApp Bot",
   "main": "index.js",
   "scripts": {
