@@ -1,6 +1,6 @@
 //NIMA//
-//Terrivez
-//supremeLord
+//NIMESHA
+//NimaLord
 
 
 require('./settings')
