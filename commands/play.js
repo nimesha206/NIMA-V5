@@ -59,5 +59,5 @@ async function playCommand(sock, chatId, message) {
 
 module.exports = playCommand; 
 
-/*Powered by KNIGHT-BOT*
-*Credits to Keith MD*`*/
+/*Powered by NIMA-V5*
+*Credits to nimesha md*`*/
