@@ -1,4 +1,4 @@
-//JUNE//
+//NIMA//
 //Terrivez
 //supremeLord
 
@@ -266,17 +266,18 @@ async function startconn() {
             await conn.sendMessage(botNumber, { 
                 text: 
                 `
-┏❐═⭔ *සම්බන්ධ උනි 😍😎* ⭔═❐
+┏❐═⭔ *සාර්ථකව සම්බන්ධ උනි 😍😎* ⭔═❐
 ┃⭔ *බොට්:* NIMA-V5
 ┃⭔ *වෙලාව:* ${new Date().toLocaleString()}
-┃⭔ *Status:* Online
+┃⭔ *NIMA-V5:* Online
 ┃⭔ *පරිශීලකයා:* ${botNumber}
+┃⭔ *CONTACT OWNER : +94726800969
 ┗❐═⭔════════⭔═❐`,
                 contextInfo: {
                     forwardingScore: 1,
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '@newsler',
+                        newsletterJid: '@newsletter',
                         newsletterName: 'NIMA-V5',
                         serverMessageId: -1
                     }
