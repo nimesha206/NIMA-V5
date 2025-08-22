@@ -145,7 +145,7 @@ async function startconn() {
                             forwardingScore: 1,
                             isForwarded: false,
                             forwardedNewsletterMessageInfo: {
-                                newsletterJid: '@newsler',
+                                newsletterJid: '@newsletter',
                                 newsletterName: 'NIMA-V5',
                                 serverMessageId: -1
                             }
