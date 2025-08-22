@@ -856,7 +856,7 @@ async function handleGroupParticipantUpdate(sock, update) {
             const data = JSON.parse(fs.readFileSync('./data/userGroupData.json'));
             const welcomeData = data.welcome[id];
             const welcomeMessage = welcomeData?.message || 'සාදරයෙන් පිළිගන්නවා {user} අපගේ සමූහයට! 🎉';
-            const channelId = welcomeData?.channelId || '@etter';
+            const channelId = welcomeData?.channelId || '@newsletter';
 
             // Send welcome message for each new participant
             for (const participant of participants) {
