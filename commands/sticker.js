@@ -36,7 +36,7 @@ async function stickerCommand(sock, chatId, message) {
                 forwardingScore: 999,
                 isForwarded: false,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '@newter',
+                    newsletterJid: '@newsletter',
                     newsletterName: 'NIMA V4',
                     serverMessageId: -1
                 }
@@ -58,7 +58,7 @@ async function stickerCommand(sock, chatId, message) {
                     forwardingScore: 999,
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '@newter',
+                        newsletterJid: '@newsletter',
                         newsletterName: 'NIMA V4',
                         serverMessageId: -1
                     }
@@ -146,7 +146,7 @@ async function stickerCommand(sock, chatId, message) {
                 forwardingScore: 999,
                 isForwarded: false,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '@neter',
+                    newsletterJid: '@newsletter',
                     newsletterName: 'NIMA V4',
                     serverMessageId: -1
                 }
