@@ -271,7 +271,6 @@ async function startconn() {
 ┃⭔ *වෙලාව:* ${new Date().toLocaleString()}
 ┃⭔ *NIMA-V5:* Online
 ┃⭔ *පරිශීලකයා:* ${botNumber}
-┃⭔ *CONTACT OWNER : +94726800969
 ┗❐═⭔════════⭔═❐`,
                 contextInfo: {
                     forwardingScore: 1,
