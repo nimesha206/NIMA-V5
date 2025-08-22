@@ -84,7 +84,7 @@ fetchJson,
 sleep } = require('./lib/myfunc');
 
 // fungsi waktu real time
-const time = moment.tz("Asia/Jakarta").format("HH:mm:ss");
+const time = moment.tz("Asia/colombo").format("HH:mm:ss");
 
 // Cmd in Console
 if (m.message) {
@@ -173,7 +173,7 @@ if (global.autorecordtype) {
 }
 
 if (autobio) {
-  supreme.updateProfileStatus(` NIMA V5 මෙ වෙලාවෙ online පටන් ගෙන දැන් ${runtime(process.uptime())}`)
+  supreme.updateProfileStatus(` NIMA V5 මෙ වෙලාවෙ online  ${runtime(process.uptime())}සිට`)
     .catch(err => console.error("Error updating status:", err));
 }
 
@@ -284,7 +284,7 @@ break;
 ///////////////////GITCLONE//////////////  
     case 'gitclone': {
 
-		      if (!text) return m.reply(`🖇️ github ලින්ක් එක.\n *උදාහරණ: .gitclone https://github.com/nimanew303/NIMA-V5-new`)
+		      if (!text) return m.reply(`🖇️ github ලින්ක් එක.\n *උදාහරණ: .gitclone https://github.com/nimanew3031/NIMA-V5-new`)
 
 if (!text.includes('github.com')) return reply(`මොකක්ද ඕන github ලිංකුව ?!`)
 
